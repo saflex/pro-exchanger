@@ -1,0 +1,100 @@
+//urls
+$url_0: url(../img/background-img/bgp.jpg);
+
+.trx-area {
+    width: 33.3%;
+    color: $white;
+    height: 440px;
+    background: $color_apple_blossom_approx;
+    padding: 28px;
+    position: relative;
+    padding-top: 26px;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    &.tr2 {
+        background: $color_casablanca_approx;
+        button {
+            color: $color_mine_shaft_approx;
+        }
+        p {
+            color: $color_woody_brown_approx;
+        }
+        h5 {
+            color: $color_woody_brown_approx;
+        }
+        h4 {
+            color: $color_woody_brown_approx;
+        }
+    }
+}
+.trio-bl {
+    overflow: hidden;
+    margin-top: 43px;
+    display: flex;
+    p {
+        font-size: 13px;
+    }
+}
+.tlk-area {
+    height: 108px;
+    padding-top: 14px;
+    h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 19px;
+    }
+    h5 {
+        text-align: center;
+        margin-top: -8px;
+        margin-bottom: 10px;
+    }
+}
+.more-info {
+    position: absolute;
+    bottom: 28px;
+    width: 82%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: none;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid $color_mine_shaft_approx;
+    border-radius: 5px;
+    &:hover {
+        opacity: 1;
+        border-color: $white;
+    }
+}
+@media only screen and(max-width: 991px) {
+    .trx-area {
+        width: 100%;
+        max-width: 313px;
+        margin: 0 auto 20px;
+        display: block;
+        float: none;
+    }
+    .main-container.bg-partners {
+        z-index: 1;
+    }
+}
+@media only screen and(max-width: 767px) {
+    .trio-bl {
+        flex-direction: column;
+    }
+    .trx-area {
+        max-width: 400px;
+    }
+}
+.main-container.bg-partners {
+    background: $color_white_lilac_approx $url_0 0 0 no-repeat;
+    background-size: 100% 563px;
+    margin-bottom: -55px;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 60px;
+}

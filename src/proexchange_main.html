@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=9; IE=10; IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <title>Html</title>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="img/regular-img/logo.png" height="66" width="90" alt=""></a>
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Открыть</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Правила обмена</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерам</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="user-blk no-autorization-style">
+                    <img src="img/regular-img/ava.png" height="31" width="31" alt="">
+                    <h3>
+                        <a href="#" data-modal="#login-modal" class="modal__trigger">Войти</a>
+                        <span>или</span>
+                    </h3>
+                    <button data-modal="#login-modal2" class="modal__trigger">Зарегистрируйтесь</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="container check-order-content">
+            <div class="rows">
+                <h1>Единный обмен валют</h1>
+                <div class="Content-mt">
+                    <div class="Exchange">
+                        <div class="Calculator">
+                            <div class="Left">
+                                <h1>Отдаете</h1>
+                                <div class="Input">
+                                    <input type="number" value="500" id="SetMoney" min="500">
+                                    <div class="Money modal__trigger" id="SetExchange" aria-hidden="true" data-modal="#sys-modal">
+                                        <span>Я. Деньги</span>
+                                        <img src="img/regular-img/yandex.png"></div>
+                                </div>
+                                <h2>
+                                    Минимальная сумма
+                                    <label id="GetMinimal">500</label>
+                                    RUB
+                                </h2>
+                            </div>
+                            <div class="Midle">
+                                <img src="img/regular-img/load.png"></div>
+                          
+                            <div class="Right">
+                                <h1>
+                                    Получаете
+                                    <a href="">
+                                        <span class="res">Резервы</span>
+                                    </a>
+                                </h1>
+                                <div class="Input">
+                                    <div class="Money modal__trigger" id="SetExchange" aria-hidden="true" data-modal="#sys-modal3">
+                                        <img c src="img/regular-img/yandex.png">Я. Деньги</div>
+                                    <div class="jq-number" id="SwMoney-styler">
+                                        <div class="jq-number__field"><input type="number" id="SwMoney" min="500" value="2340" placeholder=""></div>
+                                        <div class="jq-number__spin minus"></div>
+                                        <div class="jq-number__spin plus"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    Обмен по курсу: 1 руб. =
+                                    <label id="Curency">0.954</label>
+                                    руб.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="Data">
+                            <h2>Введите данные для завершения обмена</h2>
+                            <div class="IconInputs">
+                                <input type="email" placeholder="Ваш e-mail">
+                                <input type="text" placeholder="Кошелек Я.Денеги">
+                                <input type="text" placeholder="Кошелек Я.Денеги"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="" checked>
+                        Я согласен
+                        <a href="#">с условиями и правилами сервиса</a>
+                    </label>
+                </div>
+                <button class="main-btn main-button-bg">Обменять сейчас</button>
+            </div>
+        </div>
+    </div>
+    <div class="block-reserv">
+        <div class="container">
+            <div class="left-title">
+                <h2>Резервы Валют</h2>
+            </div>
+            <div class="right-title">
+                <a href="" class="modal__trigger" data-modal="#reserv-modal">
+                    <i class="icon i-balance"></i>
+                    <span class="res">Заказать резерв</span>
+                </a>
+            </div>
+            <div class="res-blks">
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="res-block-area">
+                    <p>
+                        <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                    <span>4751.23</span>
+                </div>
+                <div class="no-show-rez">
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/qw.png" alt="">Qiwi</p>
+                        <span>4751.23</span>
+                    </div>
+                    <div class="res-block-area">
+                        <p>
+                            <img src="img/regular-img/pvt.png" alt="">PRIVAT24</p>
+                        <span>4751.23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-trigger-show">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="block-slider">
+        <div class="container">
+            <div class="row">
+                <div class="slider-sl">
+                    <div>
+                        <div class="PageCaption">
+                            <h2>Новости</h2>
+                            <span>/</span>
+                            <a href="">
+                                все новости
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-clx">
+                        <div class="news-blk">
+                            <a href="#">
+                                <p>Мы запустили Обмен Яндекс Деньги</p>
+                                <span>14 нояб. 2017 г.</span>
+                            </a>
+                        </div>
+                        <div class="news-blk">
+                            <a href="#">
+                                <p>Мы запустили Обмен Яндекс Деньги</p>
+                                <span>14 нояб. 2017 г.</span>
+                            </a>
+                        </div>
+                        <div class="news-blk">
+                            <a href="#">
+                                <p>Мы запустили Обмен Яндекс Деньги</p>
+                                <span>14 нояб. 2017 г.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-sl">
+                    <div>
+                        <div class="PageCaption">
+                            <h2>отзывы</h2>
+                            <span>/</span>
+                            <a href="">
+                                все отзывы
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider-str">
+                        <div>
+                            <div class="content-in-slider">
+                                <div class="fll">Дмитрий</div>
+                                <div class="flr">3 дня назад</div>
+                                <div class="clear-blk-slider">
+                                    Молодцы, перевод с карты Приват на ADVCash за считанные секунды и курс понравился. Отличный обменник!
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-in-slider">
+                                <div class="fll">Дмитрий</div>
+                                <div class="flr">3 дня назад</div>
+                                <div class="clear-blk-slider">
+                                    Молодцы, перевод с карты Приват на ADVCash за считанные секунды и курс понравился. Отличный обменник!
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-in-slider">
+                                <div class="fll">Дмитрий</div>
+                                <div class="flr">3 дня назад</div>
+                                <div class="clear-blk-slider">
+                                    Молодцы, перевод с карты Приват на ADVCash за считанные секунды и курс понравился. Отличный обменник!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-sl">
+                    <div>
+                        <div class="PageCaption">
+                            <h2>Курс валют цб РФ</h2>
+                        </div>
+                    </div>
+                    <div class="table-area-slider">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>31.01.2018</td>
+                                    <td class="th2">Покупка</td>
+                                    <td class="th3">Продажа</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ta1">
+                                            <img src="img/regular-img/f1.png" alt="">Украинская гривна</div>
+                                    </td>
+                                    <td>
+                                        <div class="ta2">
+                                            94.4
+                                            <i class="fa fa-level-up" aria-hidden="true"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ta3">
+                                            98.6
+                                            <span>...</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ta1">
+                                            <img src="img/regular-img/f2.png" alt="">Российский рубль</div>
+                                    </td>
+                                    <td>
+                                        <div class="ta2">
+                                            94.4
+                                            <i class="fa fa-level-up" aria-hidden="true"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ta3">
+                                            98.6
+                                            <span>...</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ta1">
+                                            <img src="img/regular-img/f3.png" alt="">Долар США</div>
+                                    </td>
+                                    <td>
+                                        <div class="ta2">
+                                            94.4
+                                            <i class="fa fa-level-down" aria-hidden="true"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ta3">
+                                            98.6
+                                            <span>...</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stats-block">
+        <div class="container">
+            <h2>Немного статистики</h2>
+            <div class="row">
+                <ul>
+                    <li>
+                        <div class="li1">
+                            <p>Сегодня
+                                операций</p>
+                            <span>4875</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li2">
+                            <p>Сегодня
+                                обменяли</p>
+                            <span>124k$</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li3">
+                            <p>Резервы
+                                сервиса</p>
+                            <span>16M $</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li4">
+                            <p>Пользователи
+                                системы</p>
+                            <span>48 750</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="block-obm">
+        <div class="container">
+            <div class="left-sl">
+                <h4>ОБМЕН ETHEREUM ETH НА СБЕРБАНК RUB</h4>
+                <p>Для обмена Вам необходимо выполнить несколько шагов:</p>
+                <ul>
+                    <li class="bf1">
+                        Заполните все поля представленной формы. Нажмите кнопку «Обменять».
+                    </li>
+                    <li class="bf2">
+                        Ознакомьтесь с условиями договора на оказание услуг обмена, если вы принимаете их, поставьте галочку в соответствующем поле и нажмите кнопку «Создать заявку».
+                    </li>
+                    <li class="bf3">
+                        Оплатите заявку. Для этого следует совершить перевод необходимой суммы, следуя инструкциям на нашем сайте.
+                    </li>
+                    <li class="bf4">
+                        После выполнения указанных действий, система переместит Вас на страницу «Состояние заявки», где будет указан статус вашего перевода.
+                    </li>
+                </ul>
+                <p>
+                    Внимание: для выполнения данной операции потребуется участие оператора (см. статус оператора).
+                </p>
+            </div>
+            <div class="cns-2 flr">
+                <h2>Оператор онлайн</h2>
+                <div class="emz">
+                    <div class="rx-block">
+                        <div class="flrx1">
+                            <p>Эл.почта</p>
+                            <a href="mailto:support@proexchcanger.net">support@proexchcanger.net</a>
+                        </div>
+                        <div class="flrx2">
+                            <p>Телефон:</p>
+                            <a href="tel:+123456789922">+123456789922</a>
+                        </div>
+                        <div class="flrx3">
+                            <p>Telegram</p>
+                            <a href="#">@proexchanger_test</a>
+                        </div>
+                        <div class="flrx4">
+                            <p> Рeжим работы:</p>
+                            <a>пн-пт c 9:00 до 19:00</a>
+                        </div>
+                    </div>
+                    <div class="chat-area">
+                        <button class="fll">Начать чат</button>
+                        <p>обмен производить только на сайте</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="glv">
+        <div class="container">
+            <h2>Наши партнеры</h2>
+            <div class="slick-slt">
+                <div>
+                    <a href="#"><img src="img/regular-img/sl1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl3.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl3.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl3.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl1.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl2.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/regular-img/sl3.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="line-top"></div>
+            <div class="menu-footer">
+                <p class="fll">© 2013 ProExchange.net— сервис обмена электронных валют.</p>
+                <div class="menu-bottom flr">
+                    <ul>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Подарки сайта</a>
+                        </li>
+                        <li>
+                            <a href="#">Правила сервиса</a>
+                        </li>
+                        <li>
+                            <a href="#">О сервисе</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="sys-modal" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>ВЫБЕРИ СИСТЕМУ</h2>
+                <div class="sys-content">
+                    <div class="Content">
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System no-active-block" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <button class="rez-btn main-button-bg">Заказать резерв</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="sys-modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>ВЫБЕРИ СИСТЕМУ</h2>
+                <div class="sys-content">
+                    <div class="Content">
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System no-active-block" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <button class="rez-btn main-button-bg">Заказать резерв</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="login-modal" class="modal modal--align-top modal__bg w360px" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>АВТОРИЗАЦИЯ</h2>
+                <div class="login-content">
+                    <div class="tabs">
+                        <nav class="tabs__navigation">
+                            <a class="tabs__link tabs__link--active" href="#first">Вход</a>
+                            <a class="tabs__link" href="#second">Регистрация</a>
+                        </nav>
+                        <div class="tabs__section" id="first">
+                            <form action="">
+                                <div class="form-login">
+                                    <div class="lg-form">
+                                        <label for="">E-MAIL</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">Пароль</label>
+                                        <input type="password">
+                                        <a class="conf-password" href="#">Забыли пароль?</a>
+                                    </div>
+                                    <div class="lg-form">
+                                        <button class="login-btn">
+                                            <span>Войти</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tabs__section" id="second">
+                            <form action="">
+                                <div class="form-login">
+                                    <div class="lg-form">
+                                        <label for="">ИМЯ</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">ФАМИЛИЯ</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">EMAIL</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">ТЕЛЕФОН</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form suss-form-green">
+                                        <label for="">ПАРОЛЬ</label>
+                                        <input type="password" value="fddgf323g322323"></div>
+                                    <div class="lg-form error-form-red">
+                                        <label for="">ЕЩЕ РАЗ</label>
+                                        <input type="password" value="dfere32235r2ss"></div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            Я согласен
+                                            <a href="#">с условиями</a>
+                                        </label>
+                                    </div>
+                                    <div class="lg-form ">
+                                        <button class="reg-btn">
+                                            <span>Регистрация</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-enter">
+                            <p>Регистрация через социальные сети</p>
+                            <ul>
+                                <li>
+                                    <a class="soc1" href="#">
+                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc2" href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc3" href="#">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc4" href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc5" href="#">
+                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc6" href="#">
+                                        <i class="fa fa-maxcdn" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="login-modal2" class="modal modal--align-top modal__bg w360px" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>АВТОРИЗАЦИЯ</h2>
+                <div class="login-content">
+                    <div class="tabs">
+                        <nav class="tabs__navigation">
+                            <a class="tabs__link tabs__link--active" style="width: 100% !important;" href="#second2">Регистрация</a>
+                        </nav>
+                        <div class="tabs__section" id="second2">
+                            <form action="">
+                                <div class="form-login">
+                                    <div class="lg-form">
+                                        <label for="">ИМЯ</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">ФАМИЛИЯ</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">EMAIL</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form">
+                                        <label for="">ТЕЛЕФОН</label>
+                                        <input type="text"></div>
+                                    <div class="lg-form suss-form-green">
+                                        <label for="">ПАРОЛЬ</label>
+                                        <input type="password" value="fddgf323g322323"></div>
+                                    <div class="lg-form error-form-red">
+                                        <label for="">ЕЩЕ РАЗ</label>
+                                        <input type="password" value="dfere32235r2ss"></div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            Я согласен
+                                            <a href="#">с условиями</a>
+                                        </label>
+                                    </div>
+                                    <div class="lg-form ">
+                                        <button class="reg-btn">
+                                            <span>Регистрация</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-enter">
+                            <p>Регистрация через социальные сети</p>
+                            <ul>
+                                <li>
+                                    <a class="soc1" href="#">
+                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc2" href="#">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc3" href="#">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc4" href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc5" href="#">
+                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="soc6" href="#">
+                                        <i class="fa fa-maxcdn" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="sys-modal3" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>ВЫБЕРИ СИСТЕМУ</h2>
+                <div class="sys-content">
+                    <div class="Content">
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <div class="Description">В резерве</div>
+                            <div class="Count">345 000 RUB</div>
+                        </div>
+                        <div class="System no-active-block" onclick="SelectChange.call(this)">
+                            <i class="" aria-hidden="true"></i>
+                            <div class="Currency">RUB</div>
+                            <img src="img/regular-img/qwi.png" alt="">
+                            <button class="rez-btn main-button-bg">Заказать резерв</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="reserv-modal" class="modal modal--align-top modal__bg w360px" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2>Заказ резерва</h2>
+                <div class="reserv-content">
+                    <form action="">
+                        <div class="form-login">
+                            <div class="ex-modal-block">
+                                <div class="fll fl50">
+                                    <img src="img/regular-img/pvt.png" alt=""></div>
+                                <div class="flr fl50">
+                                    <p>PRIVAT24 UA</p>
+                                    <h3>8 394.00</h3>
+                                </div>
+                            </div>
+                            <div class="lg-form">
+                                <label for="">НЕОБХОДИМАЯ СУММА</label>
+                                <input type="text" value="485.39 UHA"></div>
+                            <div class="lg-form">
+                                <label for="">E-MAIL</label>
+                                <input type="text" value="www.lancer.pro@gmail.com"></div>
+                            <div class="lg-form">
+                                <label for="">КОММЕНТАРИЙ</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="lg-form ">
+                                <button class="zap-btn">
+                                    <span>Запросить</span>
+                                </button>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </form>
+                </div>
+                <a href="" class="modal__close demo-close">
+                    <svg class="" viewBox="0 0 24 24">
+                        <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

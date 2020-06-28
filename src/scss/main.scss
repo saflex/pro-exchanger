@@ -1,0 +1,30 @@
+
+@import "../scss/variables";
+@import "../scss/sections/main";
+@import "../scss/sections/check_order";
+@import "../scss/sections/proexchange_main";
+@import "../scss/sections/contacts";
+@import "../scss/sections/faq";
+@import "../scss/sections/news";
+@import "../scss/sections/partner";
+@import "../scss/sections/userpanel";
+
+
+
+
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src:
+      url(#{$path}.woff) format("woff"),
+      url(#{$path}.eot?#iefix) format('embedded-opentype'), 
+      url(#{$path}.ttf) format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face('Micra', '../fonts/Micra', normal, 'normal');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic);
+
